@@ -48,8 +48,8 @@ public class UserController {
      * @param request
      * @return
      */
-    @RequestMapping("/load")
-    public Map load(HttpServletRequest request) {
+    @RequestMapping("/login")
+    public Map login(HttpServletRequest request) {
         String account = request.getParameter("account");
         String password = request.getParameter("password");
         Map<String, Object> data = userService.load(account, password);
